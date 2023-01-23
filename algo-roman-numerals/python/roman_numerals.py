@@ -17,17 +17,21 @@ def to_roman(num):
     result = ''  #final output string
     pointer = 0  #list starting location
 
-    # Looping while the number is greater than zero.
-    while num > 0:
-        for _ in range(num // values[pointer]):
-            result += symbols[pointer]
-            num -= values[pointer]
-        pointer += 1
+    while num > 0:  # Looping while the number is greater than zero.
+        
+        for _ in range(num // values[pointer]):  
+        # Checks the boolean value of the operation 
+        
+            result += symbols[pointer]  # Append the Symbol to the string
 
-    return result
+            num -= values[pointer]  # Subtract the value from the original number
 
-debug = True
+        pointer += 1  # Increase the pointer by 1, aka, look at the next number in line. 
 
+    return result  # Send the result to where this function was called.
+
+# Extra debug code
+debug = False
 if debug:
     print (bool(4 // 5))
     print (bool(11 // 5))
