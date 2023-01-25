@@ -1,0 +1,2 @@
+    while (bottles:=bottles-1) != 0:  # welcome to the walrus operator 
+        print (f"{bottles} bottles of beer on the wall\n{bottles} bottles of beer\nTake one down, pass it around\n{bottles-1} bottles of beer on the wall\n")
