@@ -1,5 +1,5 @@
 var arm = require("./armstrongNumbers");
-var shallowEqualArrays = require('shallow-equal/arrays');
+var shallowEqualArrays = require('shallow-equal/dist');
 
 function createArrayOfNum(maxValue) {
   return Array.apply(null, {length: maxValue}).map(Number.call, Number)
